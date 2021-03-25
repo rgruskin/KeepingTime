@@ -1,0 +1,624 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		C09E6650260BFD1B000CCDDB /* KeepingTimeApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C09E664F260BFD1B000CCDDB /* KeepingTimeApp.swift */; };
+		C09E6652260BFD1B000CCDDB /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C09E6651260BFD1B000CCDDB /* ContentView.swift */; };
+		C09E6654260BFD1C000CCDDB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C09E6653260BFD1C000CCDDB /* Assets.xcassets */; };
+		C09E6657260BFD1C000CCDDB /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C09E6656260BFD1C000CCDDB /* Preview Assets.xcassets */; };
+		C09E665C260BFD1C000CCDDB /* KeepingTime WatchKit App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = C09E665B260BFD1C000CCDDB /* KeepingTime WatchKit App.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		C09E6661260BFD1C000CCDDB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C09E6660260BFD1C000CCDDB /* Assets.xcassets */; };
+		C09E6668260BFD1D000CCDDB /* KeepingTime WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = C09E6667260BFD1D000CCDDB /* KeepingTime WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		C09E666D260BFD1D000CCDDB /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C09E666C260BFD1D000CCDDB /* ContentView.swift */; };
+		C09E666F260BFD1D000CCDDB /* KeepingTimeApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C09E666E260BFD1D000CCDDB /* KeepingTimeApp.swift */; };
+		C09E6671260BFD1D000CCDDB /* ComplicationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C09E6670260BFD1D000CCDDB /* ComplicationController.swift */; };
+		C09E6673260BFD1D000CCDDB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C09E6672260BFD1D000CCDDB /* Assets.xcassets */; };
+		C09E6676260BFD1D000CCDDB /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C09E6675260BFD1D000CCDDB /* Preview Assets.xcassets */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		C09E665D260BFD1C000CCDDB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C09E6644260BFD1B000CCDDB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C09E665A260BFD1C000CCDDB;
+			remoteInfo = "KeepingTime WatchKit App";
+		};
+		C09E6669260BFD1D000CCDDB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C09E6644260BFD1B000CCDDB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C09E6666260BFD1D000CCDDB;
+			remoteInfo = "KeepingTime WatchKit Extension";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		C09E667D260BFD1D000CCDDB /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				C09E6668260BFD1D000CCDDB /* KeepingTime WatchKit Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C09E6681260BFD1D000CCDDB /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				C09E665C260BFD1C000CCDDB /* KeepingTime WatchKit App.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		C09E664C260BFD1B000CCDDB /* KeepingTime.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KeepingTime.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		C09E664F260BFD1B000CCDDB /* KeepingTimeApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeepingTimeApp.swift; sourceTree = "<group>"; };
+		C09E6651260BFD1B000CCDDB /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		C09E6653260BFD1C000CCDDB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		C09E6656260BFD1C000CCDDB /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		C09E6658260BFD1C000CCDDB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C09E665B260BFD1C000CCDDB /* KeepingTime WatchKit App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "KeepingTime WatchKit App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		C09E6660260BFD1C000CCDDB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		C09E6662260BFD1C000CCDDB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C09E6667260BFD1D000CCDDB /* KeepingTime WatchKit Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "KeepingTime WatchKit Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		C09E666C260BFD1D000CCDDB /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		C09E666E260BFD1D000CCDDB /* KeepingTimeApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeepingTimeApp.swift; sourceTree = "<group>"; };
+		C09E6670260BFD1D000CCDDB /* ComplicationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComplicationController.swift; sourceTree = "<group>"; };
+		C09E6672260BFD1D000CCDDB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		C09E6675260BFD1D000CCDDB /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		C09E6677260BFD1D000CCDDB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		C09E6649260BFD1B000CCDDB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C09E6664260BFD1D000CCDDB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		C09E6643260BFD1B000CCDDB = {
+			isa = PBXGroup;
+			children = (
+				C09E664E260BFD1B000CCDDB /* KeepingTime */,
+				C09E665F260BFD1C000CCDDB /* KeepingTime WatchKit App */,
+				C09E666B260BFD1D000CCDDB /* KeepingTime WatchKit Extension */,
+				C09E664D260BFD1B000CCDDB /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		C09E664D260BFD1B000CCDDB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C09E664C260BFD1B000CCDDB /* KeepingTime.app */,
+				C09E665B260BFD1C000CCDDB /* KeepingTime WatchKit App.app */,
+				C09E6667260BFD1D000CCDDB /* KeepingTime WatchKit Extension.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C09E664E260BFD1B000CCDDB /* KeepingTime */ = {
+			isa = PBXGroup;
+			children = (
+				C09E664F260BFD1B000CCDDB /* KeepingTimeApp.swift */,
+				C09E6651260BFD1B000CCDDB /* ContentView.swift */,
+				C09E6653260BFD1C000CCDDB /* Assets.xcassets */,
+				C09E6658260BFD1C000CCDDB /* Info.plist */,
+				C09E6655260BFD1C000CCDDB /* Preview Content */,
+			);
+			path = KeepingTime;
+			sourceTree = "<group>";
+		};
+		C09E6655260BFD1C000CCDDB /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				C09E6656260BFD1C000CCDDB /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		C09E665F260BFD1C000CCDDB /* KeepingTime WatchKit App */ = {
+			isa = PBXGroup;
+			children = (
+				C09E6660260BFD1C000CCDDB /* Assets.xcassets */,
+				C09E6662260BFD1C000CCDDB /* Info.plist */,
+			);
+			path = "KeepingTime WatchKit App";
+			sourceTree = "<group>";
+		};
+		C09E666B260BFD1D000CCDDB /* KeepingTime WatchKit Extension */ = {
+			isa = PBXGroup;
+			children = (
+				C09E666C260BFD1D000CCDDB /* ContentView.swift */,
+				C09E666E260BFD1D000CCDDB /* KeepingTimeApp.swift */,
+				C09E6670260BFD1D000CCDDB /* ComplicationController.swift */,
+				C09E6672260BFD1D000CCDDB /* Assets.xcassets */,
+				C09E6677260BFD1D000CCDDB /* Info.plist */,
+				C09E6674260BFD1D000CCDDB /* Preview Content */,
+			);
+			path = "KeepingTime WatchKit Extension";
+			sourceTree = "<group>";
+		};
+		C09E6674260BFD1D000CCDDB /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				C09E6675260BFD1D000CCDDB /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		C09E664B260BFD1B000CCDDB /* KeepingTime */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C09E6682260BFD1D000CCDDB /* Build configuration list for PBXNativeTarget "KeepingTime" */;
+			buildPhases = (
+				C09E6648260BFD1B000CCDDB /* Sources */,
+				C09E6649260BFD1B000CCDDB /* Frameworks */,
+				C09E664A260BFD1B000CCDDB /* Resources */,
+				C09E6681260BFD1D000CCDDB /* Embed Watch Content */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C09E665E260BFD1C000CCDDB /* PBXTargetDependency */,
+			);
+			name = KeepingTime;
+			productName = KeepingTime;
+			productReference = C09E664C260BFD1B000CCDDB /* KeepingTime.app */;
+			productType = "com.apple.product-type.application";
+		};
+		C09E665A260BFD1C000CCDDB /* KeepingTime WatchKit App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C09E667E260BFD1D000CCDDB /* Build configuration list for PBXNativeTarget "KeepingTime WatchKit App" */;
+			buildPhases = (
+				C09E6659260BFD1C000CCDDB /* Resources */,
+				C09E667D260BFD1D000CCDDB /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C09E666A260BFD1D000CCDDB /* PBXTargetDependency */,
+			);
+			name = "KeepingTime WatchKit App";
+			productName = "KeepingTime WatchKit App";
+			productReference = C09E665B260BFD1C000CCDDB /* KeepingTime WatchKit App.app */;
+			productType = "com.apple.product-type.application.watchapp2";
+		};
+		C09E6666260BFD1D000CCDDB /* KeepingTime WatchKit Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C09E667A260BFD1D000CCDDB /* Build configuration list for PBXNativeTarget "KeepingTime WatchKit Extension" */;
+			buildPhases = (
+				C09E6663260BFD1D000CCDDB /* Sources */,
+				C09E6664260BFD1D000CCDDB /* Frameworks */,
+				C09E6665260BFD1D000CCDDB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "KeepingTime WatchKit Extension";
+			productName = "KeepingTime WatchKit Extension";
+			productReference = C09E6667260BFD1D000CCDDB /* KeepingTime WatchKit Extension.appex */;
+			productType = "com.apple.product-type.watchkit2-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		C09E6644260BFD1B000CCDDB /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1240;
+				LastUpgradeCheck = 1240;
+				TargetAttributes = {
+					C09E664B260BFD1B000CCDDB = {
+						CreatedOnToolsVersion = 12.4;
+					};
+					C09E665A260BFD1C000CCDDB = {
+						CreatedOnToolsVersion = 12.4;
+					};
+					C09E6666260BFD1D000CCDDB = {
+						CreatedOnToolsVersion = 12.4;
+					};
+				};
+			};
+			buildConfigurationList = C09E6647260BFD1B000CCDDB /* Build configuration list for PBXProject "KeepingTime" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = C09E6643260BFD1B000CCDDB;
+			productRefGroup = C09E664D260BFD1B000CCDDB /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C09E664B260BFD1B000CCDDB /* KeepingTime */,
+				C09E665A260BFD1C000CCDDB /* KeepingTime WatchKit App */,
+				C09E6666260BFD1D000CCDDB /* KeepingTime WatchKit Extension */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		C09E664A260BFD1B000CCDDB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C09E6657260BFD1C000CCDDB /* Preview Assets.xcassets in Resources */,
+				C09E6654260BFD1C000CCDDB /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C09E6659260BFD1C000CCDDB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C09E6661260BFD1C000CCDDB /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C09E6665260BFD1D000CCDDB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C09E6676260BFD1D000CCDDB /* Preview Assets.xcassets in Resources */,
+				C09E6673260BFD1D000CCDDB /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C09E6648260BFD1B000CCDDB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C09E6652260BFD1B000CCDDB /* ContentView.swift in Sources */,
+				C09E6650260BFD1B000CCDDB /* KeepingTimeApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C09E6663260BFD1D000CCDDB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C09E666F260BFD1D000CCDDB /* KeepingTimeApp.swift in Sources */,
+				C09E666D260BFD1D000CCDDB /* ContentView.swift in Sources */,
+				C09E6671260BFD1D000CCDDB /* ComplicationController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		C09E665E260BFD1C000CCDDB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C09E665A260BFD1C000CCDDB /* KeepingTime WatchKit App */;
+			targetProxy = C09E665D260BFD1C000CCDDB /* PBXContainerItemProxy */;
+		};
+		C09E666A260BFD1D000CCDDB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C09E6666260BFD1D000CCDDB /* KeepingTime WatchKit Extension */;
+			targetProxy = C09E6669260BFD1D000CCDDB /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		C09E6678260BFD1D000CCDDB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		C09E6679260BFD1D000CCDDB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+			};
+			name = Release;
+		};
+		C09E667B260BFD1D000CCDDB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"KeepingTime WatchKit Extension/Preview Content\"";
+				DEVELOPMENT_TEAM = 7N92RGT66J;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = "KeepingTime WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.NikonInstruments.KeepingTime.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 7.2;
+			};
+			name = Debug;
+		};
+		C09E667C260BFD1D000CCDDB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"KeepingTime WatchKit Extension/Preview Content\"";
+				DEVELOPMENT_TEAM = 7N92RGT66J;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = "KeepingTime WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.NikonInstruments.KeepingTime.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				VALIDATE_PRODUCT = YES;
+				WATCHOS_DEPLOYMENT_TARGET = 7.2;
+			};
+			name = Release;
+		};
+		C09E667F260BFD1D000CCDDB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 7N92RGT66J;
+				IBSC_MODULE = KeepingTime_WatchKit_Extension;
+				INFOPLIST_FILE = "KeepingTime WatchKit App/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = com.NikonInstruments.KeepingTime.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 7.2;
+			};
+			name = Debug;
+		};
+		C09E6680260BFD1D000CCDDB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 7N92RGT66J;
+				IBSC_MODULE = KeepingTime_WatchKit_Extension;
+				INFOPLIST_FILE = "KeepingTime WatchKit App/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = com.NikonInstruments.KeepingTime.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				VALIDATE_PRODUCT = YES;
+				WATCHOS_DEPLOYMENT_TARGET = 7.2;
+			};
+			name = Release;
+		};
+		C09E6683260BFD1D000CCDDB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"KeepingTime/Preview Content\"";
+				DEVELOPMENT_TEAM = 7N92RGT66J;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = KeepingTime/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.NikonInstruments.KeepingTime;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		C09E6684260BFD1D000CCDDB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"KeepingTime/Preview Content\"";
+				DEVELOPMENT_TEAM = 7N92RGT66J;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = KeepingTime/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.NikonInstruments.KeepingTime;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C09E6647260BFD1B000CCDDB /* Build configuration list for PBXProject "KeepingTime" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C09E6678260BFD1D000CCDDB /* Debug */,
+				C09E6679260BFD1D000CCDDB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C09E667A260BFD1D000CCDDB /* Build configuration list for PBXNativeTarget "KeepingTime WatchKit Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C09E667B260BFD1D000CCDDB /* Debug */,
+				C09E667C260BFD1D000CCDDB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C09E667E260BFD1D000CCDDB /* Build configuration list for PBXNativeTarget "KeepingTime WatchKit App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C09E667F260BFD1D000CCDDB /* Debug */,
+				C09E6680260BFD1D000CCDDB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C09E6682260BFD1D000CCDDB /* Build configuration list for PBXNativeTarget "KeepingTime" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C09E6683260BFD1D000CCDDB /* Debug */,
+				C09E6684260BFD1D000CCDDB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = C09E6644260BFD1B000CCDDB /* Project object */;
+}
