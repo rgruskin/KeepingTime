@@ -19,6 +19,8 @@
 		C09E6671260BFD1D000CCDDB /* ComplicationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C09E6670260BFD1D000CCDDB /* ComplicationController.swift */; };
 		C09E6673260BFD1D000CCDDB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C09E6672260BFD1D000CCDDB /* Assets.xcassets */; };
 		C09E6676260BFD1D000CCDDB /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C09E6675260BFD1D000CCDDB /* Preview Assets.xcassets */; };
+		C09E6689260D4DAC000CCDDB /* DataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C09E6688260D4DAC000CCDDB /* DataModel.swift */; };
+		C09E668E260D50E6000CCDDB /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = C09E668D260D50E6000CCDDB /* Extensions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -80,6 +82,8 @@
 		C09E6672260BFD1D000CCDDB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C09E6675260BFD1D000CCDDB /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		C09E6677260BFD1D000CCDDB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C09E6688260D4DAC000CCDDB /* DataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataModel.swift; sourceTree = "<group>"; };
+		C09E668D260D50E6000CCDDB /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -153,6 +157,8 @@
 			isa = PBXGroup;
 			children = (
 				C09E666C260BFD1D000CCDDB /* ContentView.swift */,
+				C09E6688260D4DAC000CCDDB /* DataModel.swift */,
+				C09E668D260D50E6000CCDDB /* Extensions.swift */,
 				C09E666E260BFD1D000CCDDB /* KeepingTimeApp.swift */,
 				C09E6670260BFD1D000CCDDB /* ComplicationController.swift */,
 				C09E6672260BFD1D000CCDDB /* Assets.xcassets */,
@@ -309,7 +315,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C09E668E260D50E6000CCDDB /* Extensions.swift in Sources */,
 				C09E666F260BFD1D000CCDDB /* KeepingTimeApp.swift in Sources */,
+				C09E6689260D4DAC000CCDDB /* DataModel.swift in Sources */,
 				C09E666D260BFD1D000CCDDB /* ContentView.swift in Sources */,
 				C09E6671260BFD1D000CCDDB /* ComplicationController.swift in Sources */,
 			);

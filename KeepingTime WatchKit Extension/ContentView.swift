@@ -9,15 +9,16 @@ import SwiftUI
 
 struct ContentView: View {
     
-    var numOfTimers : Int = 3
     var numOfRows : Int = 2
+    
+    @ObservedObject var timerData = myTimers()
     
     var body: some View {
         TabView {
             VStack (alignment: .center) {
                 HStack (spacing: 55) {
                     Button (action: {
-                        let a = 4
+                        AddATimer()
                     }) {
                         Image(systemName: "plus")
                             .resizable()
@@ -28,7 +29,7 @@ struct ContentView: View {
                     }
             
                     Button (action: {
-                        let a = 4
+                        OpenSettings()
                     }) {
                         Image(systemName: "gearshape")
                             .resizable()
@@ -41,7 +42,7 @@ struct ContentView: View {
                 .padding(20)
                 
                 ScrollView {
-                    ForEach (0..<numOfTimers) { index in
+                    ForEach (0..<Int(timerData.myTimers.count/2)) { index in
                         HStack {
                             ForEach (0..<numOfRows) { rIndex in
                                 VStack {
@@ -52,9 +53,9 @@ struct ContentView: View {
                                             .resizable()
                                             .frame(width: 30, height: 30)
                                             .aspectRatio(contentMode: .fit)
-                                            .foregroundColor(.white)
+                                            .foregroundColor(timerData.myTimers[(index*2) + rIndex].color)
                                     }
-                                    Text("Service")
+                                    Text(timerData.myTimers[(index*2) + rIndex].shortDescription)
                                         .font(.caption2)
                                 }
                                 .padding(5)
@@ -76,7 +77,16 @@ struct ContentView: View {
     func OpenATimer(timerIndex : Int)  {
         
     }
+    
+    func AddATimer() {
+        
+    }
+    
+    func OpenSettings() {
+        
+    }
 }
+
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
