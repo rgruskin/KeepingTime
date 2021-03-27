@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C0221939260FB0200068A63C /* CurrentTimer.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0221938260FB0200068A63C /* CurrentTimer.swift */; };
 		C09E6650260BFD1B000CCDDB /* KeepingTimeApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C09E664F260BFD1B000CCDDB /* KeepingTimeApp.swift */; };
 		C09E6652260BFD1B000CCDDB /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C09E6651260BFD1B000CCDDB /* ContentView.swift */; };
 		C09E6654260BFD1C000CCDDB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C09E6653260BFD1C000CCDDB /* Assets.xcassets */; };
@@ -66,6 +67,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		C0221938260FB0200068A63C /* CurrentTimer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrentTimer.swift; sourceTree = "<group>"; };
 		C09E664C260BFD1B000CCDDB /* KeepingTime.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KeepingTime.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C09E664F260BFD1B000CCDDB /* KeepingTimeApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeepingTimeApp.swift; sourceTree = "<group>"; };
 		C09E6651260BFD1B000CCDDB /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -157,6 +159,7 @@
 			isa = PBXGroup;
 			children = (
 				C09E666C260BFD1D000CCDDB /* ContentView.swift */,
+				C0221938260FB0200068A63C /* CurrentTimer.swift */,
 				C09E6688260D4DAC000CCDDB /* DataModel.swift */,
 				C09E668D260D50E6000CCDDB /* Extensions.swift */,
 				C09E666E260BFD1D000CCDDB /* KeepingTimeApp.swift */,
@@ -316,6 +319,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C09E668E260D50E6000CCDDB /* Extensions.swift in Sources */,
+				C0221939260FB0200068A63C /* CurrentTimer.swift in Sources */,
 				C09E666F260BFD1D000CCDDB /* KeepingTimeApp.swift in Sources */,
 				C09E6689260D4DAC000CCDDB /* DataModel.swift in Sources */,
 				C09E666D260BFD1D000CCDDB /* ContentView.swift in Sources */,

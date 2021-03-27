@@ -10,11 +10,12 @@ import SwiftUI
 struct ContentView: View {
     
     var numOfRows : Int = 2
+    @State var tabIndex = 0
     
     @ObservedObject var timerData = myTimers()
     
     var body: some View {
-        TabView {
+        TabView (selection: $tabIndex) {
             VStack (alignment: .center) {
                 HStack (spacing: 55) {
                     Button (action: {
@@ -65,6 +66,13 @@ struct ContentView: View {
                 }
             
             }
+            .tabItem { }
+            .tag(0)
+            
+            CurrentTimer()
+                .tabItem {}
+                .tag (1)
+            
            // .edgesIgnoringSafeArea(.all)
             .ignoresSafeArea()
     
