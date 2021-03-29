@@ -13,11 +13,11 @@ struct CurrentTimer: View {
     @State var seconds: Int = 0
     
     @State var timer: Timer? = nil
-    @State var timerIsPaused: Bool = true
+    @State var timerIsRunning: Bool = false
     
     var body: some View {
         
-
+        
         ZStack {
             Color.backgroundColor
                 .edgesIgnoringSafeArea(.all)
@@ -31,44 +31,67 @@ struct CurrentTimer: View {
                     Label(hours: hours, minutes: minutes, seconds: seconds)
                 }
                 .padding(.top, 50.0)
-            
+                
                 HStack {
                     Button (action: {
-                        startTimer()
-                    }) {
-                        Image(systemName: "play.circle.fill")
-                            .resizable()
-                            .frame(width: 20, height: 20)
-                            .aspectRatio(contentMode: .fit)
-                            .foregroundColor(.white)
-                    }
-                
-                    Button (action: {
-                        stopTimer()
                         minutes = 0
                         seconds = 0
                         hours = 0
                     }) {
-                        Image(systemName: "arrowshape.turn.up.backward.fill")
-                            .resizable()
-                            .frame(width: 20, height: 20)
-                            .aspectRatio(contentMode: .fit)
-                            .foregroundColor(.white)
+                        ZStack {
+                            Image("ResetTimerButton")
+                                .resizable()
+                                .frame(width: 80, height: 40)
+                                .aspectRatio(contentMode: .fit)
+                            Text("Reset")
+                                .foregroundColor(.white)
+                        }
+                    }
+                    
+                    if timerIsRunning {
+                        Button (action: {
+                            stopTimer()
+                        }) {
+                            
+                            ZStack {
+                                Image("StopTimerButton")
+                                    .resizable()
+                                    .frame(width: 80, height: 40)
+                                    .aspectRatio(contentMode: .fit)
+                                Text("Stop")
+                                    .foregroundColor(.black)
+                            }
+                        }
+                    }
+                    else {
+                        Button (action: {
+                            startTimer()
+                        }) {
+                            
+                            ZStack {
+                                Image("StartTimerButton")
+                                    .resizable()
+                                    .frame(width: 80, height: 40)
+                                    .aspectRatio(contentMode: .fit)
+                                Text("Start")
+                                    .foregroundColor(.black)
+                            }
+                        }
                     }
                 }
-                .padding(.top, 20.0)
+                .padding(.top, 22.0)
             }
         }
     }
     
     func stopTimer(){
-      timerIsPaused = true
+      timerIsRunning = false
       timer?.invalidate()
       timer = nil
     }
 
     func startTimer(){
-      timerIsPaused = false
+      timerIsRunning = true
       // 1. Make a new timer
       timer = Timer.scheduledTimer(withTimeInterval: 1, repeats: true){ tempTimer in
         // 2. Check time to add to H:M:S
